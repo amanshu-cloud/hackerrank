@@ -1,0 +1,12 @@
+'''
+task is converting a list into its so called integer equivalent
+for example 
+convert list [1,2,3,4] to a sum of 1234
+'''
+listt = [1,2,3,4]
+sum = 0
+for i in range(len(listt)):
+    sum+=(listt[i]*10**(len(listt)-i-1)) //reversing the indexes and multiplying 10^(reversed index) with the current element
+    
+print(sum)
+    
